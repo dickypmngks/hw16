@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.8.0.final using JasperReports Library version 6.8.0-2ed8dfabb690ff337a5797129f2cd92902b0c87b  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="SuratLamaran" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="456be6b9-fc40-44fe-80f1-564fac1bfd6e">
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="nim" class="java.lang.String"/>
+	<field name="name" class="java.lang.String"/>
+	<field name="dob" class="java.sql.Date"/>
+	<field name="address" class="java.lang.String"/>
+	<field name="gender" class="java.lang.String"/>
+	<field name="studyProgramCode" class="java.lang.Integer"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band splitType="Stretch"/>
+	</title>
+	<pageHeader>
+		<band height="82" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="50" width="550" height="30" uuid="68ae149b-f1ff-4197-b909-eb8d7afeb1f1"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="13" isBold="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[SURAT LAMARAN KERJA]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="156" splitType="Stretch">
+			<staticText>
+				<reportElement x="380" y="0" width="50" height="20" uuid="74a4472c-fd90-4a0f-8844-69c7103bea2f"/>
+				<textElement>
+					<font fontName="Arial" size="12"/>
+				</textElement>
+				<text><![CDATA[Jakarta, ]]></text>
+			</staticText>
+			<textField pattern="dd MMMM yyy">
+				<reportElement x="430" y="0" width="120" height="20" uuid="1b85b3f8-af70-47db-a682-04dac6435f4f"/>
+				<textElement>
+					<font fontName="Arial" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="30" width="140" height="20" uuid="83254125-5591-488d-bd6b-886c0075feda"/>
+				<textElement>
+					<font fontName="Arial" size="12"/>
+				</textElement>
+				<text><![CDATA[Hal : Lamaran Kerja]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="60" width="230" height="90" uuid="f8873908-246b-465a-a23a-f8cf1d4d09bb"/>
+				<textElement>
+					<font fontName="Arial" size="12"/>
+				</textElement>
+				<text><![CDATA[Kepada Yth,
+Bapak/Ibu Pimpinan/ HRD
+PT. Bawana Margatama
+Sovereign Plaza, Lantai 2. Jl. TB Simatupang No. 36
+Jakarta 12430]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="512" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="140" height="20" uuid="a18727c7-ac8c-42a4-a5a2-094defdacc0a"/>
+				<textElement>
+					<font fontName="Arial" size="12"/>
+				</textElement>
+				<text><![CDATA[Dengan Hormat,]]></text>
+			</staticText>
+			<textField pattern="dd MMMM yyyy">
+				<reportElement x="0" y="24" width="550" height="46" uuid="13b39d08-c348-4e97-a658-5005747ff2c1"/>
+				<textElement textAlignment="Justified" verticalAlignment="Middle">
+					<font fontName="Arial" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Sehubungan dengan informasi lowongan pekerjaan di PT.Bawana Margatama yang saya peroleh dari website perusahaan pada tanggal "+new java.util.Date()+". Saya mengajukan diri untuk bergabung sebagai Java Developer di PT.Bawana Margatama. Adapun data diri saya sebagai berikut:"]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="90" width="200" height="20" uuid="3e5cf534-6a95-4f79-9500-5122f3b7185c"/>
+				<textElement>
+					<font fontName="Arial" size="12"/>
+				</textElement>
+				<text><![CDATA[Nama				:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="110" width="200" height="20" uuid="ea7446ed-1514-4f46-8c4d-24e69405b5a9"/>
+				<textElement>
+					<font fontName="Arial" size="12"/>
+				</textElement>
+				<text><![CDATA[Tempat, Tanggal Lahir	:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="130" width="200" height="20" uuid="ed5a803e-65b3-413b-98a4-30ac062ba8c5"/>
+				<textElement>
+					<font fontName="Arial" size="12"/>
+				</textElement>
+				<text><![CDATA[Umur				:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="150" width="200" height="20" uuid="6d7e3f3d-6924-43f0-b1f4-22e0d7c19365"/>
+				<textElement>
+					<font fontName="Arial" size="12"/>
+				</textElement>
+				<text><![CDATA[Pendidikan Terakhir		:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="170" width="200" height="20" uuid="3d41b019-7cc1-4e25-bd01-26d0c9df0350"/>
+				<textElement>
+					<font fontName="Arial" size="12"/>
+				</textElement>
+				<text><![CDATA[Alamat				:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="190" width="200" height="20" uuid="23040c09-3f84-48d8-9218-dc94233d569c"/>
+				<textElement>
+					<font fontName="Arial" size="12"/>
+				</textElement>
+				<text><![CDATA[Jenis Kelamin			:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="300" width="550" height="40" uuid="a41a8414-fb5d-4da9-a57d-c969a2eb105a"/>
+				<textElement>
+					<font fontName="Arial" size="12"/>
+				</textElement>
+				<text><![CDATA[Demikian surat lamaran kerja ini saya buat, besar harapan saya untuk dapat diterima diperusahaan
+Bapak/Ibu. Atas perhatiannya saya ucapkan terimakasih.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="40" y="260" width="160" height="40" uuid="a69aacd4-e02f-40a0-ac52-72debf3a25a3"/>
+				<textElement>
+					<font fontName="Arial" size="12" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[1. Curriculum Vitae (CV)
+2. Scan Ijazah]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="5" y="235" width="550" height="40" uuid="d963bf6e-bfac-4f5e-ba46-a351b6f8d35f"/>
+				<textElement>
+					<font fontName="Arial" size="12"/>
+				</textElement>
+				<text><![CDATA[Sebagai bahan pertimbangan Bapak/Ibu saya melampirkan sejumlah dokumen penting sebagai
+berikut :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="455" y="370" width="100" height="40" uuid="676a16fb-60af-4b7c-a482-b38410986a1e"/>
+				<textElement>
+					<font fontName="Arial" size="12"/>
+				</textElement>
+				<text><![CDATA[Hormat Saya]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="200" y="90" width="100" height="20" uuid="d8b16b62-0112-43fb-8726-6d32cd63ee37"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{name}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="200" y="110" width="180" height="20" uuid="d23bbe8b-c724-4e26-b3be-c25c62a2a815"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Jakarta"+$F{dob}]]></textFieldExpression>
+			</textField>
+			<textField pattern="yyyy">
+				<reportElement x="200" y="130" width="210" height="20" uuid="0fa521bb-4802-4ef3-a7a6-4e492725e148"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{dob}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="200" y="150" width="210" height="20" uuid="984cab16-4d5c-4837-820a-7da44755c6d6"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Universitas Bawana S1"+$F{studyProgramCode}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="200" y="170" width="210" height="20" uuid="25d251a7-a53d-4b7e-b797-1a520c1ee8db"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{address}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="200" y="190" width="210" height="20" uuid="c53c2b30-b414-4ea5-8179-3540f693237a"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{gender}.equals("L")? "Pria" :"Wanita"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="455" y="470" width="100" height="20" uuid="f0951f65-a68b-495e-9187-e9b8f51e9db2"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{name}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>
